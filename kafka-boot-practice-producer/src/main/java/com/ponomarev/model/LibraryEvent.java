@@ -1,10 +1,11 @@
 package com.ponomarev.model;
 
 import lombok.*;
-import lombok.experimental.Accessors;
 
 @Builder
-@Accessors
+@Getter
+@Setter
+@ToString
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor

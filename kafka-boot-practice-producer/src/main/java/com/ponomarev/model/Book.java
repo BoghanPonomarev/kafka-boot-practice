@@ -1,13 +1,11 @@
 package com.ponomarev.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
+import lombok.*;
 
 @Builder
-@Accessors
+@Getter
+@Setter
+@ToString
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
