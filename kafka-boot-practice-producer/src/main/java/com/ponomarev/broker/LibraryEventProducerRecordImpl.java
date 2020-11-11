@@ -23,7 +23,7 @@ public class LibraryEventProducerRecordImpl implements EventProducer<LibraryEven
     private final ObjectMapper objectMapper;
 
     @Override
-    public void produce(LibraryEvent eventPayload) throws ExecutionException, InterruptedException, TimeoutException {
+    public void produce(LibraryEvent eventPayload) {
         Integer eventId = eventPayload.getId();
         try {
             String value = objectMapper.writeValueAsString(eventPayload);

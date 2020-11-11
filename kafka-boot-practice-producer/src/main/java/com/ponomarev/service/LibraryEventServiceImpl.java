@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class LibraryEventServiceImpl implements LibraryEventService {
 
     @NonNull
-    @Qualifier("asyncLibraryEventProducerImpl")
+    @Qualifier("libraryEventProducerRecordImpl")
     private final EventProducer<LibraryEvent> libraryEventProducer;
 
     @Override
